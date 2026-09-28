@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.composer {
+  width: min(100%, 600px);
+  padding: 28px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.composer h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.composer label {
+  display: block;
+  margin: 14px 0 8px;
+  font-weight: 600;
+}
+
+.composer select,
+.composer textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.composer textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.composer select:focus,
+.composer textarea:focus {
+  outline: 2px solid #646cff;
+  border-color: #646cff;
+}
+
+.count {
+  text-align: right;
+  color: #666;
+  margin: 8px 0 16px;
+}
+
+.error-text {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.composer button {
+  padding: 11px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #646cff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.composer button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
